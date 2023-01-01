@@ -1,0 +1,61 @@
+mgvi_cc_prebuilt_library_shared {
+    arch: {
+        arm: {
+            shared_libs: [
+                "libdl",
+                "libcutils",
+                "libutils",
+                "liblog",
+            ],
+            srcs: [
+                "arm/libpq_prot.so",
+            ],
+        },
+        arm64: {
+            shared_libs: [
+                "libdl",
+                "libcutils",
+                "libutils",
+                "liblog",
+            ],
+            srcs: [
+                "arm64/libpq_prot.so",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    export_include_dirs: [
+        "include",
+    ],
+    mgvi_brm_platform: "mt6785",
+    mgvi_platforms: [
+        "mt6580",
+        "mt6797",
+        "mt6739",
+        "mt6799",
+        "mt6763",
+        "mt6758",
+        "mt6775",
+        "mt6771",
+        "mt6765",
+        "mt6761",
+        "mt3967",
+        "mt6779",
+        "mt6768",
+        "mt6785",
+        "mt6885",
+        "mt6873",
+        "mt6853",
+        "mt8168",
+        "mt6833",
+        "mt6781",
+        "mt6877",
+    ],
+    mgvi_product_line: "tablet",
+    mgvi_so_name: "libpq_prot",
+    mgvi_src_path: "vendor/mediatek/proprietary/hardware/libpq",
+    name: "libpq_prot.legacy",
+    owner: "mtk",
+    proprietary: true,
+}
+
