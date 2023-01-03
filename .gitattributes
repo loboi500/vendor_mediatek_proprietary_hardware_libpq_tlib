@@ -1,0 +1,5 @@
+libpq_cust_headers filter=lfs diff=lfs merge=lfs -text
+libpq_prot.legacy filter=lfs diff=lfs merge=lfs -text
+libpq_prot.mt6789 filter=lfs diff=lfs merge=lfs -text
+libpq_prot.mt6893 filter=lfs diff=lfs merge=lfs -text
+libpq_prot.mt6983 filter=lfs diff=lfs merge=lfs -text
